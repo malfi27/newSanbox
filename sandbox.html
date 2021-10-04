@@ -1,0 +1,457 @@
+<div class="container" id="resources_container">
+    <div class="authorize-wrapper"></div>
+  
+    <ul id="resources"><li id="resource_" class="resource"><div class="heading">
+    <h2>
+      <a href="#!/" class="toggleEndpointList" data-id=""></a> 
+    </h2>
+    <ul class="options">
+      <li>
+        <a href="#!/" id="endpointListTogger_" class="toggleEndpointList" data-id="" data-sw-translate="">Show/Hide</a>
+      </li>
+      <li>
+        <a href="#" class="collapseResource" data-id="" data-sw-translate="">
+          List Operations
+        </a>
+      </li>
+      <li>
+        <a href="#" class="expandResource" data-id="" data-sw-translate="">
+          Expand Operations
+        </a>
+      </li>
+    </ul>
+  </div>
+  <ul class="endpoints" id="_endpoint_list" style="overflow: hidden; display: block;">
+  
+  <li class="endpoint">  <ul class="operations">
+      <li class="get operation" id="_get_airfares">
+        <div class="heading">
+          <h3>
+            <span class="http_method">
+            <a href="#!//get_airfares" class="toggleOperation">get</a>
+            </span>
+            <span class="path">
+            <a href="#!//get_airfares" class="toggleOperation ">/airfares</a>
+            </span>
+          </h3>
+          <ul class="options">
+            <li>
+            <a href="#!//get_airfares" class="toggleOperation"><span class="markdown"><p>Negotiated airfares</p>
+  </span></a>
+            </li>
+          </ul>
+        </div>
+        <div class="content" id="_get_airfares_content" style="overflow: hidden;">
+          <h4><span data-sw-translate="">Implementation Notes</span></h4>
+          <div class="markdown"><p>This endpoint returns negotiated airfaires.</p>
+  </div>
+            <div class="response-class">
+              <h4><span data-sw-translate="">Response Class</span> (<span data-sw-translate="">Status</span> 200)</h4>
+                <div class="markdown"><p>An array of airfares</p>
+  </div>
+              <p><span class="model-signature"><div>
+  <div>
+  <ul class="signature-nav">
+    <li><a class="description-link" href="#" data-sw-translate="">Model</a></li>
+    <li><a class="snippet-link selected" href="#" data-sw-translate="">Example Value</a></li>
+  </ul>
+  <div>
+  
+  <div class="signature-container">
+    <div class="description" style="display: none;">
+        <span class="strong">Inline Model [</span><div>Inline Model 1</div><span class="strong">]</span><br><span class="strong">Inline Model 1 {</span><div><span class="propName ">ID</span> (<span class="propType">integer</span>, <span class="propOptKey">optional</span>): <span class="propDesc markdown"><p>Generated unique identifier.</p>
+  </span>,</div><div><span class="propName ">ITEM_NUM</span> (<span class="propType">string</span>, <span class="propOptKey">optional</span>): <span class="propDesc markdown"><p>Item number.</p>
+  </span>,</div><div><span class="propName ">AWARD_YEAR</span> (<span class="propType">string</span>, <span class="propOptKey">optional</span>): <span class="propDesc markdown"><p>Award Year.</p>
+  </span>,</div><div><span class="propName ">ORIGIN_AIRPORT_ABBREV</span> (<span class="propType">string</span>, <span class="propOptKey">optional</span>): <span class="propDesc markdown"><p>Origin Airport Abbreviation.</p>
+  </span>,</div><div><span class="propName ">DESTINATION_AIRPORT_ABBREV</span> (<span class="propType">string</span>, <span class="propOptKey">optional</span>): <span class="propDesc markdown"><p>Destinatoin Airport Abbreviation.</p>
+  </span>,</div><div><span class="propName ">ORIGIN_CITY_NAME</span> (<span class="propType">string</span>, <span class="propOptKey">optional</span>): <span class="propDesc markdown"><p>Original City Name.</p>
+  </span>,</div><div><span class="propName ">ORIGIN_STATE</span> (<span class="propType">string</span>, <span class="propOptKey">optional</span>): <span class="propDesc markdown"><p>Origin State.</p>
+  </span>,</div><div><span class="propName ">ORIGIN_COUNTRY</span> (<span class="propType">string</span>, <span class="propOptKey">optional</span>): <span class="propDesc markdown"><p>Origin Country.</p>
+  </span>,</div><div><span class="propName ">DESTINATION_CITY_NAME</span> (<span class="propType">string</span>, <span class="propOptKey">optional</span>): <span class="propDesc markdown"><p>Destination City Name.</p>
+  </span>,</div><div><span class="propName ">DESTINATION_STATE</span> (<span class="propType">string</span>, <span class="propOptKey">optional</span>): <span class="propDesc markdown"><p>Destination State.</p>
+  </span>,</div><div><span class="propName ">DESTINATION_COUNTRY</span> (<span class="propType">string</span>, <span class="propOptKey">optional</span>): <span class="propDesc markdown"><p>Destination Country.</p>
+  </span>,</div><div><span class="propName ">AIRLINE_ABBREV</span> (<span class="propType">string</span>, <span class="propOptKey">optional</span>): <span class="propDesc markdown"><p>Airline Abbreviation.</p>
+  </span>,</div><div><span class="propName ">AWARDED_SERV</span> (<span class="propType">string</span>, <span class="propOptKey">optional</span>): <span class="propDesc markdown"><p>Awarded Serv.</p>
+  </span>,</div><div><span class="propName ">PAX_COUNT</span> (<span class="propType">string</span>, <span class="propOptKey">optional</span>): <span class="propDesc markdown"><p>PAX Count.</p>
+  </span>,</div><div><span class="propName ">YCA_FARE</span> (<span class="propType">integer</span>, <span class="propOptKey">optional</span>): <span class="propDesc markdown"><p>YCA Fare.</p>
+  </span>,</div><div><span class="propName ">XCA_FARE</span> (<span class="propType">integer</span>, <span class="propOptKey">optional</span>): <span class="propDesc markdown"><p>XCA Fare.</p>
+  </span>,</div><div><span class="propName ">BUSINESS_FARE</span> (<span class="propType">integer</span>, <span class="propOptKey">optional</span>): <span class="propDesc markdown"><p>Business Fare.</p>
+  </span>,</div><div><span class="propName ">ORIGIN_AIRPORT_LOCATION</span> (<span class="propType">string</span>, <span class="propOptKey">optional</span>): <span class="propDesc markdown"><p>Origin Airport Location.</p>
+  </span>,</div><div><span class="propName ">DESTINATION_AIRPORT_LOCATION</span> (<span class="propType">string</span>, <span class="propOptKey">optional</span>): <span class="propDesc markdown"><p>Destination Airport Location.</p>
+  </span>,</div><div><span class="propName ">ORIGIN_CITY_STATE_AIRPORT</span> (<span class="propType">string</span>, <span class="propOptKey">optional</span>): <span class="propDesc markdown"><p>Origin City State Airport.</p>
+  </span>,</div><div><span class="propName ">DESTINATION_CITY_STATE_AIRPORT</span> (<span class="propType">string</span>, <span class="propOptKey">optional</span>): <span class="propDesc markdown"><p>Destination City State Airport.</p>
+  </span>,</div><div><span class="propName ">EFFECTIVE_DATE</span> (<span class="propType">string</span>, <span class="propOptKey">optional</span>): <span class="propDesc markdown"><p>Expiration Date.</p>
+  </span>,</div><div><span class="propName ">EXPIRATION_DATE</span> (<span class="propType">string</span>, <span class="propOptKey">optional</span>): <span class="propDesc markdown"><p>Expiration Date.</p>
+  </span></div><span class="strong">}</span>
+    </div>
+  
+    <div class="snippet" style="display: block;">
+        <div class="snippet_json" style="display: block;">
+          <pre><code class="hljs json">[
+    {
+      "<span class="hljs-attr">ID</span>": <span class="hljs-number">0</span>,
+      "<span class="hljs-attr">ITEM_NUM</span>": <span class="hljs-string">"string"</span>,
+      "<span class="hljs-attr">AWARD_YEAR</span>": <span class="hljs-string">"string"</span>,
+      "<span class="hljs-attr">ORIGIN_AIRPORT_ABBREV</span>": <span class="hljs-string">"string"</span>,
+      "<span class="hljs-attr">DESTINATION_AIRPORT_ABBREV</span>": <span class="hljs-string">"string"</span>,
+      "<span class="hljs-attr">ORIGIN_CITY_NAME</span>": <span class="hljs-string">"string"</span>,
+      "<span class="hljs-attr">ORIGIN_STATE</span>": <span class="hljs-string">"string"</span>,
+      "<span class="hljs-attr">ORIGIN_COUNTRY</span>": <span class="hljs-string">"string"</span>,
+      "<span class="hljs-attr">DESTINATION_CITY_NAME</span>": <span class="hljs-string">"string"</span>,
+      "<span class="hljs-attr">DESTINATION_STATE</span>": <span class="hljs-string">"string"</span>,
+      "<span class="hljs-attr">DESTINATION_COUNTRY</span>": <span class="hljs-string">"string"</span>,
+      "<span class="hljs-attr">AIRLINE_ABBREV</span>": <span class="hljs-string">"string"</span>,
+      "<span class="hljs-attr">AWARDED_SERV</span>": <span class="hljs-string">"string"</span>,
+      "<span class="hljs-attr">PAX_COUNT</span>": <span class="hljs-string">"string"</span>,
+      "<span class="hljs-attr">YCA_FARE</span>": <span class="hljs-number">0</span>,
+      "<span class="hljs-attr">XCA_FARE</span>": <span class="hljs-number">0</span>,
+      "<span class="hljs-attr">BUSINESS_FARE</span>": <span class="hljs-number">0</span>,
+      "<span class="hljs-attr">ORIGIN_AIRPORT_LOCATION</span>": <span class="hljs-string">"string"</span>,
+      "<span class="hljs-attr">DESTINATION_AIRPORT_LOCATION</span>": <span class="hljs-string">"string"</span>,
+      "<span class="hljs-attr">ORIGIN_CITY_STATE_AIRPORT</span>": <span class="hljs-string">"string"</span>,
+      "<span class="hljs-attr">DESTINATION_CITY_STATE_AIRPORT</span>": <span class="hljs-string">"2021-10-04T07:36:34.950Z"</span>,
+      "<span class="hljs-attr">EFFECTIVE_DATE</span>": <span class="hljs-string">"2021-10-04T07:36:34.950Z"</span>,
+      "<span class="hljs-attr">EXPIRATION_DATE</span>": <span class="hljs-string">"2021-10-04T07:36:34.950Z"</span>
+    }
+  ]</code></pre>
+          
+        </div>
+    </div>
+  </div>
+  </div></div></div></span></p>
+              <br>
+              <div class="response-content-type"><div><label data-sw-translate="" for="rct0.6643872791261909">Response Content Type</label>
+  <select name="responseContentType" id="rct0.6643872791261909">
+    <option value="application/json">application/json</option>
+  </select>
+  </div></div>
+              </div>
+  
+  
+          <form accept-charset="UTF-8" class="sandbox">
+            <div style="margin:0;padding:0;display:inline"></div>
+            <h4 data-sw-translate="">Parameters</h4>
+            <table class="fullwidth parameters">
+            <thead>
+              <tr>
+              <th style="width: 100px; max-width: 100px" data-sw-translate="">Parameter</th>
+              <th style="width: 310px; max-width: 310px" data-sw-translate="">Value</th>
+              <th style="width: 200px; max-width: 200px" data-sw-translate="">Description</th>
+              <th style="width: 100px; max-width: 100px" data-sw-translate="">Parameter Type</th>
+              <th style="width: 220px; max-width: 230px" data-sw-translate="">Data Type</th>
+              </tr>
+            </thead>
+            <tbody class="operation-params">
+  
+            <tr><td class="code required"><label for="maward_year0.11670796153072804">award_year</label></td>
+  <td>
+  <input class="parameter required" minlength="1" name="award_year" placeholder="(required)" id="maward_year0.11670796153072804" type="text" value=""></td>
+  <td>
+      <strong><span class="markdown"><p>Year of airfare award. Example: '2017'</p>
+  </span></strong>
+  </td>
+  <td>query</td>
+  <td><span class="model-signature">string</span></td>
+  </tr><tr><td class="code"><label for="morigin_airport_abbrev0.8759400387445653">origin_airport_abbrev</label></td>
+  <td>
+  
+  <input class="parameter" minlength="0" name="origin_airport_abbrev" placeholder="" id="morigin_airport_abbrev0.8759400387445653" type="text" value="">
+  </td>
+  <td class="markdown"><p>Origin airport abbreviation. Example: 'ABQ'. Must include either this or the destination airport abbreviation.</p>
+  </td>
+  <td>query</td>
+  <td>
+      <span class="model-signature">string</span>
+  </td>
+  </tr><tr><td class="code"><label for="mdestination_airport_abbrev0.24244594885097048">destination_airport_abbrev</label></td>
+  <td>
+  
+  <input class="parameter" minlength="0" name="destination_airport_abbrev" placeholder="" id="mdestination_airport_abbrev0.24244594885097048" type="text" value="">
+  </td>
+  <td class="markdown"><p>Destination airport abbreviation. Example: 'BWI'. Must include either this or the origination airport abbreviation.</p>
+  </td>
+  <td>query</td>
+  <td>
+      <span class="model-signature">string</span>
+  </td>
+  </tr></tbody>
+            </table>
+            <div style="margin:0;padding:0;display:inline"></div>
+            <h4 data-sw-translate="">Response Messages</h4>
+            <table class="fullwidth response-messages">
+              <thead>
+              <tr>
+                <th data-sw-translate="">HTTP Status Code</th>
+                <th data-sw-translate="">Reason</th>
+                <th data-sw-translate="">Response Model</th>
+                <th data-sw-translate="">Headers</th>
+              </tr>
+              </thead>
+              <tbody class="operation-status">
+              <tr><td width="15%" class="code">default</td>
+  <td class="markdown"><p>Unexpected error</p>
+  </td>
+  <td width="50%"><span class="model-signature"><div>
+  <div>
+  <ul class="signature-nav">
+    <li><a class="description-link" href="#" data-sw-translate="">Model</a></li>
+    <li><a class="snippet-link selected" href="#" data-sw-translate="">Example Value</a></li>
+  </ul>
+  <div>
+  
+  <div class="signature-container">
+    <div class="description" style="display: none;">
+        <span class="strong">Error {</span><div><span class="propName ">message</span> (<span class="propType">string</span>, <span class="propOptKey">optional</span>),</div><div><span class="propName ">required_fields</span> (<span class="propType">string</span>, <span class="propOptKey">optional</span>),</div><div><span class="propName ">example</span> (<span class="propType">string</span>, <span class="propOptKey">optional</span>)</div><span class="strong">}</span>
+    </div>
+  
+    <div class="snippet" style="display: block;">
+        <div class="snippet_json" style="display: block;">
+          <pre><code class="hljs json">{
+    "<span class="hljs-attr">message</span>": <span class="hljs-string">"string"</span>,
+    "<span class="hljs-attr">required_fields</span>": <span class="hljs-string">"string"</span>,
+    "<span class="hljs-attr">example</span>": <span class="hljs-string">"string"</span>
+  }</code></pre>
+          
+        </div>
+    </div>
+  </div>
+  </div></div></div></span></td>
+  <td class="headers">
+    <table>
+      <tbody>
+      </tbody>
+    </table>
+  </td></tr></tbody>
+            </table>
+            <div class="sandbox_header">
+              <input class="submit" type="submit" value="Try it out!" data-sw-translate="">
+              <a href="#" class="response_hider" style="display:none" data-sw-translate="">Hide Response</a>
+              <span class="response_throbber" style="display:none"></span>
+            </div>
+          </form>
+          <div class="response" style="display:none">
+            <h4 class="curl">Curl</h4>
+            <div class="block curl"></div>
+            <h4 data-sw-translate="">Request URL</h4>
+            <div class="block request_url"></div>
+            <h4 data-sw-translate="">Response Body</h4>
+            <div class="block response_body"></div>
+            <h4 data-sw-translate="">Response Code</h4>
+            <div class="block response_code"></div>
+            <h4 data-sw-translate="">Response Headers</h4>
+            <div class="block response_headers"></div>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </li><li class="endpoint">  <ul class="operations">
+      <li class="get operation" id="_get_airfares_id">
+        <div class="heading">
+          <h3>
+            <span class="http_method">
+            <a href="#!//get_airfares_id" class="toggleOperation">get</a>
+            </span>
+            <span class="path">
+            <a href="#!//get_airfares_id" class="toggleOperation ">/airfares/{id}</a>
+            </span>
+          </h3>
+          <ul class="options">
+            <li>
+            <a href="#!//get_airfares_id" class="toggleOperation"><span class="markdown"><p>Individual airfare by ID</p>
+  </span></a>
+            </li>
+          </ul>
+        </div>
+        <div class="content" id="_get_airfares_id_content" style="overflow: hidden;">
+          <h4><span data-sw-translate="">Implementation Notes</span></h4>
+          <div class="markdown"><p>This endpoint returns one airfare by ID. (This is just for demonstration purpose. For City Pairs, the ID does not have meaning.)</p>
+  </div>
+            <div class="response-class">
+              <h4><span data-sw-translate="">Response Class</span> (<span data-sw-translate="">Status</span> 200)</h4>
+                <div class="markdown"><p>An array of airfares</p>
+  </div>
+              <p><span class="model-signature"><div>
+  <div>
+  <ul class="signature-nav">
+    <li><a class="description-link" href="#" data-sw-translate="">Model</a></li>
+    <li><a class="snippet-link selected" href="#" data-sw-translate="">Example Value</a></li>
+  </ul>
+  <div>
+  
+  <div class="signature-container">
+    <div class="description" style="display: none;">
+        <span class="strong">Inline Model [</span><div>Inline Model 1</div><span class="strong">]</span><br><span class="strong">Inline Model 1 {</span><div><span class="propName ">ID</span> (<span class="propType">integer</span>, <span class="propOptKey">optional</span>): <span class="propDesc markdown"><p>Generated unique identifier.</p>
+  </span>,</div><div><span class="propName ">ITEM_NUM</span> (<span class="propType">string</span>, <span class="propOptKey">optional</span>): <span class="propDesc markdown"><p>Item number.</p>
+  </span>,</div><div><span class="propName ">AWARD_YEAR</span> (<span class="propType">string</span>, <span class="propOptKey">optional</span>): <span class="propDesc markdown"><p>Award Year.</p>
+  </span>,</div><div><span class="propName ">ORIGIN_AIRPORT_ABBREV</span> (<span class="propType">string</span>, <span class="propOptKey">optional</span>): <span class="propDesc markdown"><p>Origin Airport Abbreviation.</p>
+  </span>,</div><div><span class="propName ">DESTINATION_AIRPORT_ABBREV</span> (<span class="propType">string</span>, <span class="propOptKey">optional</span>): <span class="propDesc markdown"><p>Destinatoin Airport Abbreviation.</p>
+  </span>,</div><div><span class="propName ">ORIGIN_CITY_NAME</span> (<span class="propType">string</span>, <span class="propOptKey">optional</span>): <span class="propDesc markdown"><p>Original City Name.</p>
+  </span>,</div><div><span class="propName ">ORIGIN_STATE</span> (<span class="propType">string</span>, <span class="propOptKey">optional</span>): <span class="propDesc markdown"><p>Origin State.</p>
+  </span>,</div><div><span class="propName ">ORIGIN_COUNTRY</span> (<span class="propType">string</span>, <span class="propOptKey">optional</span>): <span class="propDesc markdown"><p>Origin Country.</p>
+  </span>,</div><div><span class="propName ">DESTINATION_CITY_NAME</span> (<span class="propType">string</span>, <span class="propOptKey">optional</span>): <span class="propDesc markdown"><p>Destination City Name.</p>
+  </span>,</div><div><span class="propName ">DESTINATION_STATE</span> (<span class="propType">string</span>, <span class="propOptKey">optional</span>): <span class="propDesc markdown"><p>Destination State.</p>
+  </span>,</div><div><span class="propName ">DESTINATION_COUNTRY</span> (<span class="propType">string</span>, <span class="propOptKey">optional</span>): <span class="propDesc markdown"><p>Destination Country.</p>
+  </span>,</div><div><span class="propName ">AIRLINE_ABBREV</span> (<span class="propType">string</span>, <span class="propOptKey">optional</span>): <span class="propDesc markdown"><p>Airline Abbreviation.</p>
+  </span>,</div><div><span class="propName ">AWARDED_SERV</span> (<span class="propType">string</span>, <span class="propOptKey">optional</span>): <span class="propDesc markdown"><p>Awarded Serv.</p>
+  </span>,</div><div><span class="propName ">PAX_COUNT</span> (<span class="propType">string</span>, <span class="propOptKey">optional</span>): <span class="propDesc markdown"><p>PAX Count.</p>
+  </span>,</div><div><span class="propName ">YCA_FARE</span> (<span class="propType">integer</span>, <span class="propOptKey">optional</span>): <span class="propDesc markdown"><p>YCA Fare.</p>
+  </span>,</div><div><span class="propName ">XCA_FARE</span> (<span class="propType">integer</span>, <span class="propOptKey">optional</span>): <span class="propDesc markdown"><p>XCA Fare.</p>
+  </span>,</div><div><span class="propName ">BUSINESS_FARE</span> (<span class="propType">integer</span>, <span class="propOptKey">optional</span>): <span class="propDesc markdown"><p>Business Fare.</p>
+  </span>,</div><div><span class="propName ">ORIGIN_AIRPORT_LOCATION</span> (<span class="propType">string</span>, <span class="propOptKey">optional</span>): <span class="propDesc markdown"><p>Origin Airport Location.</p>
+  </span>,</div><div><span class="propName ">DESTINATION_AIRPORT_LOCATION</span> (<span class="propType">string</span>, <span class="propOptKey">optional</span>): <span class="propDesc markdown"><p>Destination Airport Location.</p>
+  </span>,</div><div><span class="propName ">ORIGIN_CITY_STATE_AIRPORT</span> (<span class="propType">string</span>, <span class="propOptKey">optional</span>): <span class="propDesc markdown"><p>Origin City State Airport.</p>
+  </span>,</div><div><span class="propName ">DESTINATION_CITY_STATE_AIRPORT</span> (<span class="propType">string</span>, <span class="propOptKey">optional</span>): <span class="propDesc markdown"><p>Destination City State Airport.</p>
+  </span>,</div><div><span class="propName ">EFFECTIVE_DATE</span> (<span class="propType">string</span>, <span class="propOptKey">optional</span>): <span class="propDesc markdown"><p>Expiration Date.</p>
+  </span>,</div><div><span class="propName ">EXPIRATION_DATE</span> (<span class="propType">string</span>, <span class="propOptKey">optional</span>): <span class="propDesc markdown"><p>Expiration Date.</p>
+  </span></div><span class="strong">}</span>
+    </div>
+  
+    <div class="snippet" style="display: block;">
+        <div class="snippet_json" style="display: block;">
+          <pre><code class="hljs json">[
+    {
+      "<span class="hljs-attr">ID</span>": <span class="hljs-number">0</span>,
+      "<span class="hljs-attr">ITEM_NUM</span>": <span class="hljs-string">"string"</span>,
+      "<span class="hljs-attr">AWARD_YEAR</span>": <span class="hljs-string">"string"</span>,
+      "<span class="hljs-attr">ORIGIN_AIRPORT_ABBREV</span>": <span class="hljs-string">"string"</span>,
+      "<span class="hljs-attr">DESTINATION_AIRPORT_ABBREV</span>": <span class="hljs-string">"string"</span>,
+      "<span class="hljs-attr">ORIGIN_CITY_NAME</span>": <span class="hljs-string">"string"</span>,
+      "<span class="hljs-attr">ORIGIN_STATE</span>": <span class="hljs-string">"string"</span>,
+      "<span class="hljs-attr">ORIGIN_COUNTRY</span>": <span class="hljs-string">"string"</span>,
+      "<span class="hljs-attr">DESTINATION_CITY_NAME</span>": <span class="hljs-string">"string"</span>,
+      "<span class="hljs-attr">DESTINATION_STATE</span>": <span class="hljs-string">"string"</span>,
+      "<span class="hljs-attr">DESTINATION_COUNTRY</span>": <span class="hljs-string">"string"</span>,
+      "<span class="hljs-attr">AIRLINE_ABBREV</span>": <span class="hljs-string">"string"</span>,
+      "<span class="hljs-attr">AWARDED_SERV</span>": <span class="hljs-string">"string"</span>,
+      "<span class="hljs-attr">PAX_COUNT</span>": <span class="hljs-string">"string"</span>,
+      "<span class="hljs-attr">YCA_FARE</span>": <span class="hljs-number">0</span>,
+      "<span class="hljs-attr">XCA_FARE</span>": <span class="hljs-number">0</span>,
+      "<span class="hljs-attr">BUSINESS_FARE</span>": <span class="hljs-number">0</span>,
+      "<span class="hljs-attr">ORIGIN_AIRPORT_LOCATION</span>": <span class="hljs-string">"string"</span>,
+      "<span class="hljs-attr">DESTINATION_AIRPORT_LOCATION</span>": <span class="hljs-string">"string"</span>,
+      "<span class="hljs-attr">ORIGIN_CITY_STATE_AIRPORT</span>": <span class="hljs-string">"string"</span>,
+      "<span class="hljs-attr">DESTINATION_CITY_STATE_AIRPORT</span>": <span class="hljs-string">"2021-10-04T07:36:34.966Z"</span>,
+      "<span class="hljs-attr">EFFECTIVE_DATE</span>": <span class="hljs-string">"2021-10-04T07:36:34.966Z"</span>,
+      "<span class="hljs-attr">EXPIRATION_DATE</span>": <span class="hljs-string">"2021-10-04T07:36:34.966Z"</span>
+    }
+  ]</code></pre>
+          
+        </div>
+    </div>
+  </div>
+  </div></div></div></span></p>
+              <br>
+              <div class="response-content-type"><div><label data-sw-translate="" for="rct0.03605980785451912">Response Content Type</label>
+  <select name="responseContentType" id="rct0.03605980785451912">
+    <option value="application/json">application/json</option>
+  </select>
+  </div></div>
+              </div>
+  
+  
+          <form accept-charset="UTF-8" class="sandbox">
+            <div style="margin:0;padding:0;display:inline"></div>
+            <h4 data-sw-translate="">Parameters</h4>
+            <table class="fullwidth parameters">
+            <thead>
+              <tr>
+              <th style="width: 100px; max-width: 100px" data-sw-translate="">Parameter</th>
+              <th style="width: 310px; max-width: 310px" data-sw-translate="">Value</th>
+              <th style="width: 200px; max-width: 200px" data-sw-translate="">Description</th>
+              <th style="width: 100px; max-width: 100px" data-sw-translate="">Parameter Type</th>
+              <th style="width: 220px; max-width: 230px" data-sw-translate="">Data Type</th>
+              </tr>
+            </thead>
+            <tbody class="operation-params">
+  
+            <tr><td class="code required"><label for="mid0.9185438465846114">id</label></td>
+  <td>
+  <input class="parameter required" minlength="1" name="id" placeholder="(required)" id="mid0.9185438465846114" type="text" value=""></td>
+  <td>
+      <strong><span class="markdown"><p>Unique identifier</p>
+  </span></strong>
+  </td>
+  <td>path</td>
+  <td><span class="model-signature">integer</span></td>
+  </tr></tbody>
+            </table>
+            <div style="margin:0;padding:0;display:inline"></div>
+            <h4 data-sw-translate="">Response Messages</h4>
+            <table class="fullwidth response-messages">
+              <thead>
+              <tr>
+                <th data-sw-translate="">HTTP Status Code</th>
+                <th data-sw-translate="">Reason</th>
+                <th data-sw-translate="">Response Model</th>
+                <th data-sw-translate="">Headers</th>
+              </tr>
+              </thead>
+              <tbody class="operation-status">
+              <tr><td width="15%" class="code">default</td>
+  <td class="markdown"><p>Unexpected error</p>
+  </td>
+  <td width="50%"><span class="model-signature"><div>
+  <div>
+  <ul class="signature-nav">
+    <li><a class="description-link" href="#" data-sw-translate="">Model</a></li>
+    <li><a class="snippet-link selected" href="#" data-sw-translate="">Example Value</a></li>
+  </ul>
+  <div>
+  
+  <div class="signature-container">
+    <div class="description" style="display: none;">
+        <span class="strong">Error {</span><div><span class="propName ">message</span> (<span class="propType">string</span>, <span class="propOptKey">optional</span>),</div><div><span class="propName ">required_fields</span> (<span class="propType">string</span>, <span class="propOptKey">optional</span>),</div><div><span class="propName ">example</span> (<span class="propType">string</span>, <span class="propOptKey">optional</span>)</div><span class="strong">}</span>
+    </div>
+  
+    <div class="snippet" style="display: block;">
+        <div class="snippet_json" style="display: block;">
+          <pre><code class="hljs json">{
+    "<span class="hljs-attr">message</span>": <span class="hljs-string">"string"</span>,
+    "<span class="hljs-attr">required_fields</span>": <span class="hljs-string">"string"</span>,
+    "<span class="hljs-attr">example</span>": <span class="hljs-string">"string"</span>
+  }</code></pre>
+          
+        </div>
+    </div>
+  </div>
+  </div></div></div></span></td>
+  <td class="headers">
+    <table>
+      <tbody>
+      </tbody>
+    </table>
+  </td></tr></tbody>
+            </table>
+            <div class="sandbox_header">
+              <input class="submit" type="submit" value="Try it out!" data-sw-translate="">
+              <a href="#" class="response_hider" style="display:none" data-sw-translate="">Hide Response</a>
+              <span class="response_throbber" style="display:none"></span>
+            </div>
+          </form>
+          <div class="response" style="display:none">
+            <h4 class="curl">Curl</h4>
+            <div class="block curl"></div>
+            <h4 data-sw-translate="">Request URL</h4>
+            <div class="block request_url"></div>
+            <h4 data-sw-translate="">Response Body</h4>
+            <div class="block response_body"></div>
+            <h4 data-sw-translate="">Response Code</h4>
+            <div class="block response_code"></div>
+            <h4 data-sw-translate="">Response Headers</h4>
+            <div class="block response_headers"></div>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </li></ul>
+  </li></ul>
+  
+    <div class="footer">
+      <h4 style="color: #999">[ <span style="font-variant: small-caps">base url</span>: /travel/citypairs/v0
+    , <span style="font-variant: small-caps" data-sw-translate="">api version</span>: 0.0.0
+      ]
+      <span style="float:right"><a target="_blank" href="//online.swagger.io/validator/debug?url=https://gsa.github.io/api-documentation-template/api-docs/console/citypairs.json"><img id="validator" src="//online.swagger.io/validator?url=https://gsa.github.io/api-documentation-template/api-docs/console/citypairs.json"></a>
+      </span>
+      </h4>
+      </div>
+  </div>
